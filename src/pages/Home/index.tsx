@@ -1,5 +1,7 @@
+// depencencies --------------------------------------------------
 import React, { FC } from 'react'
-import { HeroImage, About, Services, Gallary } from "./components"
+// components --------------------------------------------------
+import { About, Gallary, HeroImage, Services } from "./components"
 
 interface HomeProps {
 
@@ -8,10 +10,6 @@ interface HomeProps {
 const Home: FC<HomeProps> = (props: HomeProps) => {
     const { } = props
 
-    // Hero Image
-    // About Section
-    // Services
-    // Gallary
     return (
         <>
             <h1>HomePage</h1>
