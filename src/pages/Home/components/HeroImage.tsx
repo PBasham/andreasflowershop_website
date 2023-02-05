@@ -1,10 +1,10 @@
 import React, { FC } from 'react'
 
-interface HomeProps {
+interface HeroImageProps {
 
 }
 
-const Home: FC<HomeProps> = (props: HomeProps) => {
+const HeroImage: FC<HeroImageProps> = (props: HeroImageProps) => {
     const { } = props
 
     // Hero Image
@@ -13,9 +13,9 @@ const Home: FC<HomeProps> = (props: HomeProps) => {
     // Gallary
     return (
         <div>
-            HomePage
+            HeroImage
         </div>
     )
 }
 
-export default Home
+export default HeroImage
