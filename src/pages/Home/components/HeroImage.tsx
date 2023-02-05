@@ -4,7 +4,7 @@ interface HeroImageProps {
 
 }
 
-const HeroImage: FC<HeroImageProps> = (props: HeroImageProps) => {
+export const HeroImage: FC<HeroImageProps> = (props: HeroImageProps) => {
     const { } = props
 
     // Hero Image
@@ -17,5 +17,3 @@ const HeroImage: FC<HeroImageProps> = (props: HeroImageProps) => {
         </div>
     )
 }
-
-export default HeroImage

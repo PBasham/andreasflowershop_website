@@ -4,7 +4,7 @@ interface AboutProps {
 
 }
 
-const About: FC<AboutProps> = (props: AboutProps) => {
+export const About: FC<AboutProps> = (props: AboutProps) => {
     const { } = props
 
     // Hero Image
@@ -17,5 +17,3 @@ const About: FC<AboutProps> = (props: AboutProps) => {
         </div>
     )
 }
-
-export default About

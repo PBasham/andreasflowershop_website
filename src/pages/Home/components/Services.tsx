@@ -4,7 +4,7 @@ interface ServicesProps {
 
 }
 
-const Services: FC<ServicesProps> = (props: ServicesProps) => {
+export const Services: FC<ServicesProps> = (props: ServicesProps) => {
     const { } = props
 
     // Hero Image
@@ -17,5 +17,3 @@ const Services: FC<ServicesProps> = (props: ServicesProps) => {
         </div>
     )
 }
-
-export default Services

@@ -4,7 +4,7 @@ interface GallaryProps {
 
 }
 
-const Gallary: FC<GallaryProps> = (props: GallaryProps) => {
+export const Gallary: FC<GallaryProps> = (props: GallaryProps) => {
     const { } = props
 
     // Hero Image
@@ -17,5 +17,3 @@ const Gallary: FC<GallaryProps> = (props: GallaryProps) => {
         </div>
     )
 }
-
-export default Gallary

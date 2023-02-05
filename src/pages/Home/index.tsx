@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import { HeroImage, About, Services, Gallary } from "./components"
 
 interface HomeProps {
 
@@ -12,9 +13,13 @@ const Home: FC<HomeProps> = (props: HomeProps) => {
     // Services
     // Gallary
     return (
-        <div>
-            HomePage
-        </div>
+        <>
+            <h1>HomePage</h1>
+            <HeroImage />
+            <About />
+            <Services />
+            <Gallary />
+        </>
     )
 }
 
