@@ -1,0 +1,9 @@
+:root {
+    --color-pink: #F7C6D9;
+    --color-blue: #48487F;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-shadow: rgba(0,0,0,.4);
+
+    --color-test: rgb(99, 252, 99);
+}
