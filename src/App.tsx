@@ -1,7 +1,10 @@
-import "./assets/styling/App.css"
-import Footer from "./components/footer"
+// pages / components --------------------------------------------------
 import NavBar from "./components/navbar"
 import Home from "./pages/Home"
+import Footer from "./components/footer"
+// styling --------------------------------------------------
+import "./assets/styling/App.css"
+import "./assets/colors.css"
 
 function App() {
 
