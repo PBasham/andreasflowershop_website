@@ -14,13 +14,13 @@ const NavBar: FC<NavBarProps> = (props: NavBarProps) => {
 
     return (
         <div id="navbar">
-            <div className="nav-logo">AndreasFlowerShop</div>
-            <div className="nav-btns-div">
-                <ul className="nav-btns">
-                    <li className="nav-btn">Gallary</li>
-                    <li className="nav-btn">Contact</li>
-                    <li className="nav-btn">Get Quote</li>
-                </ul>
+            <div className="navbar-content">
+                <a className="nav-logo" href="#">Andreas Flower Shop</a>
+                <div className="nav-btns">
+                        <a className="nav-btn"  href="#" >Gallary</a>
+                        <a className="nav-btn" href="" >Contact</a>
+                        <a className="nav-btn" href="" >Get Quote</a>
+                </div>
             </div>
         </div>
     )
