@@ -12,7 +12,6 @@ const Home: FC<HomeProps> = (props: HomeProps) => {
 
     return (
         <>
-            <h1>HomePage</h1>
             <HeroImage />
             <About />
             <Services />

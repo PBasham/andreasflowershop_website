@@ -12,18 +12,24 @@ interface NavBarProps {
 const NavBar: FC<NavBarProps> = (props: NavBarProps) => {
     const { } = props
 
-    const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(true)
+    const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
 
     console.log(mobileNavOpen);
 
     function onMenuToggle() {
-        console.log("I've been pressed")
         setMobileNavOpen(!mobileNavOpen)
+    }
+
+    function closeMobileMenu() {
+        setMobileNavOpen(false)
+    }
+
+    function handleNavClick() {
+        if (mobileNavOpen) setMobileNavOpen(false)
     }
 
     return (
         <div id="navbar">
-            {/* <div className="navbar-content"> */}
                 <a id="nav-logo" href="#">Andreas Flower Shop</a>
                 <div id="mobile-toggle" className={`${mobileNavOpen ? "menu-open" : ""}`} onClick={onMenuToggle}></div>
                 <ul id="nav-btns" >
@@ -31,7 +37,6 @@ const NavBar: FC<NavBarProps> = (props: NavBarProps) => {
                     <a className="nav-btn" href="" >Contact</a>
                     <a className="nav-btn" href="" >Get Quote</a>
                 </ul>
-            {/* </div> */}
         </div>
     )
 }
