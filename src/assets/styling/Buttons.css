@@ -1,6 +1,8 @@
 .btn {
-    display: grid;
-    place-items: center;
+    position: relative;
+    
+    display: flex;
+    justify-content: space-evenly;
 
     padding: 5px 8px;
     background-color: var(--color-blue);
@@ -10,6 +12,13 @@
 
     border: none;
     box-shadow: 0 0 3px 1px var(--color-shadow);
+    transition: 250ms ease-in-out;
+}
+.btn:is(:hover,:focus) {
+    background-color: var(--color-lightblue);
+}
+.btn-Icon {
+    margin-right: 8px;
 }
 .sendEmail-btn {
     margin-top: 1em;

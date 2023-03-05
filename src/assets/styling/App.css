@@ -31,12 +31,12 @@ video {
 .App {}
 
 h1 {
-    font-size: 24px;
+    font-size: max(1.5rem, 1rem + 0.390625vw);
     font-weight: bold;
     color: var(--color-blue);
 }
 
 h2 {
-    font-size: 18px;
+    font-size: calc(1.1rem + 0.390625vw);
     color: var(--color-blue);
 }

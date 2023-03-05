@@ -14,16 +14,15 @@ const NavBar: FC<NavBarProps> = (props: NavBarProps) => {
 
     const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
 
-    console.log(mobileNavOpen);
-
     function onMenuToggle() {
         setMobileNavOpen(!mobileNavOpen)
     }
-
+    function openMobileMenu() {
+        setMobileNavOpen(true)
+    }
     function closeMobileMenu() {
         setMobileNavOpen(false)
     }
-
     function handleNavClick() {
         if (mobileNavOpen) setMobileNavOpen(false)
     }
