@@ -21,17 +21,19 @@ export const HeroImage: FC<HeroImageProps> = (props: HeroImageProps) => {
     }
 
     return (
-        <div id="hero-image-div">
-            <h1>Andrea's Flower Shop</h1>
-            <h2>Florist in Queens<br />7820 101st Avenue, Queens, NY</h2>
-            <ButtonOne
-                text="Get Quote"
-                classes="sendEmail-btn"
-                icon={ bubble }
-                iconSize={16}
-                iconStyling={{ transform: "translatey(-2px)",}}
-                onClick={() => console.log("I've been clicked!")}
-            />
+        <div id="hero-image-wrapper">
+            <div id="hero-image-div">
+                <h1>Andrea's Flower Shop</h1>
+                <h2>Florist in Queens<br />7820 101st Avenue, Queens, NY</h2>
+                <ButtonOne
+                    text="Get Quote"
+                    classes="sendEmail-btn"
+                    icon={bubble}
+                    iconSize={16}
+                    iconStyling={{ transform: "translatey(-2px)", }}
+                    onClick={() => console.log("I've been clicked!")}
+                />
+            </div>
         </div>
     )
 }
