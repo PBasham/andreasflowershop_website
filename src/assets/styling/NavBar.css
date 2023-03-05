@@ -2,11 +2,13 @@
         Mobile First Styling
 -----------------------------------------*/
 #navbar {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
 
     display: flex;
     align-items: center;
+    justify-content: center;
 
     padding: 0 1em;
     width: 100vw;
@@ -14,17 +16,7 @@
 
     background-color: var(--color-white);
 
-    box-shadow: 1px 0 5px 1px var(--color-shadow);
     z-index: 999;
-}
-
-.navbar-content {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-
-    height: 100%;
-    background-color: var(--color-test);
 }
 
 #nav-logo,
@@ -33,27 +25,26 @@
 }
 
 #nav-logo {
+
     color: var(--color-blue);
+    font-family: 'Courgette', cursive;
     font-weight: bold;
     font-size: 1.2rem;
 }
 
 /* HamburgerMenu -------------------------------------------------- */
 #mobile-toggle {
-    position: relative;
-
-    margin-left: auto;
+    position: absolute;
+    right: 1em;
 }
 
 #mobile-toggle,
 #mobile-toggle::before,
 #mobile-toggle::after {
     content: "";
-    /* top: 0;
-    bottom: 0; */
     height: 3px;
     width: 30px;
-    background-color: var(--color-blue);
+    background-color: var(--color-accent);
     border-radius: 20px;
 
     transition: 500ms ease;
@@ -62,26 +53,21 @@
 
 #mobile-toggle::before {
     position: absolute;
-    top: 5px;
+    top: 8px;
     right: 0;
 }
-
 #mobile-toggle::after {
     position: absolute;
-    bottom: 5px;
+    bottom: 8px;
     right: 0;
 }
-
 #mobile-toggle.menu-open {
-    transform: rotate(360deg);
     width: 0;
 }
-
 #mobile-toggle.menu-open::before {
     transform: rotate(-45deg) scale(1, 1);
     top: 0;
 }
-
 #mobile-toggle.menu-open::after {
     transform: rotate(45deg);
     bottom: 0;
@@ -92,7 +78,7 @@
 #nav-btns {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,11 +88,10 @@
     padding-top: 5em;
     height: calc(100vh - 50px);
     width: 90%;
-    border-right: 2px solid var(--color-shadow);
 
-    box-shadow: inset 0 0 3px 1px var(--color-shadow);
+    color: white;
 
-    transform: translate(-100%);
+    transform: translate(100%);
     transition: 250ms ease;
 
 }
@@ -114,10 +99,11 @@
 #mobile-toggle.menu-open+#nav-btns {
     transform: translate(0%);
     background-color: rgba(255, 255, 255, .8);
+    background-color: var(--color-transblue);
 }
 
 .nav-btn {
     font-size: 1.5rem;
-    color: var(--color-blue);
+    color: var(--color-white);
     text-decoration: none;
 }

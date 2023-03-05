@@ -5,21 +5,22 @@
     justify-content: space-evenly;
 
     padding: 5px 8px;
-    background-color: var(--color-blue);
+    border: 2px solid var(--color-blue);
+    border-radius: 15px;
+    background-color: transparent;
 
-    color: var(--color-white);
+    color: var(--color-blue);
     font-size: 1rem;
-
-    border: none;
-    box-shadow: 0 0 3px 1px var(--color-shadow);
+    
     transition: 250ms ease-in-out;
 }
 .btn:is(:hover,:focus) {
-    background-color: var(--color-lightblue);
+    background-color: var(--color-blue);
+    color: var(--color-white);
 }
 .btn-Icon {
     margin-right: 8px;
 }
 .sendEmail-btn {
-    margin-top: 3em;
+    align-self: flex-start;
 }

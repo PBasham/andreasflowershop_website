@@ -23,12 +23,12 @@ export const HeroImage: FC<HeroImageProps> = (props: HeroImageProps) => {
     return (
         <div id="hero-image-wrapper">
             <div id="hero-image-div">
-                <h1>Andrea's Flower Shop</h1>
-                <h2>Florist in Queens<br />7820 101st Avenue, Queens, NY</h2>
+                <h1>Delivering fresh flowers and happiness</h1>
+                <p>Florist in Queens</p>
+                <p>7820 101st Avenue, Queens,<br /> NY 11417</p>
                 <ButtonOne
-                    text="Get Quote"
+                    text="Get A Quote"
                     classes="sendEmail-btn"
-                    icon={bubble}
                     iconSize={16}
                     iconStyling={{ transform: "translatey(-2px)", }}
                     onClick={() => console.log("I've been clicked!")}

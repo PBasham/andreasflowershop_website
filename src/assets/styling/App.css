@@ -17,7 +17,8 @@ html {
 
 body {
     min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Nunito', sans-serif;
 }
 
 img,
@@ -27,6 +28,11 @@ video {
     display: block;
     max-width: 100%;
 }
+
+/* fonts -------------------------------------------------- */
+/* font-family: 'Courgette', cursive; */
+/* font-family: 'Nunito', sans-serif; */
+
 
 .App {}
 
@@ -39,4 +45,7 @@ h1 {
 h2 {
     font-size: calc(1.1rem + 0.390625vw);
     color: var(--color-blue);
+}
+p {
+    color: var(--color-accent);
 }

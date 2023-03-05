@@ -29,7 +29,7 @@ const NavBar: FC<NavBarProps> = (props: NavBarProps) => {
 
     return (
         <div id="navbar">
-                <a id="nav-logo" href="#">Andreas Flower Shop</a>
+                <a id="nav-logo" href="#">Andrea's Flower Shop</a>
                 <div id="mobile-toggle" className={`${mobileNavOpen ? "menu-open" : ""}`} onClick={onMenuToggle}></div>
                 <ul id="nav-btns" >
                     <a className="nav-btn" href="" >Gallary</a>

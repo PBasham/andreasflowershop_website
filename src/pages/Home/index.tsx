@@ -11,12 +11,12 @@ const Home: FC<HomeProps> = (props: HomeProps) => {
     const { } = props
 
     return (
-        <>
+        <div id="home-page-div">
             <HeroImage />
             <About />
             <Services />
             <Gallary />
-        </>
+        </div>
     )
 }
 
