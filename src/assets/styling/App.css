@@ -43,8 +43,9 @@ h1 {
 }
 
 h2 {
-    font-size: calc(1.1rem + 0.390625vw);
     color: var(--color-blue);
+    font-size: calc(1.1rem + 0.390625vw);
+    font-weight: bold;
 }
 p {
     color: var(--color-accent);
