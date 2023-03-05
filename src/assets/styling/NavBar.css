@@ -2,7 +2,8 @@
         Mobile First Styling
 -----------------------------------------*/
 #navbar {
-    position: relative;
+    position: sticky;
+    top: 0;
 
     display: flex;
     align-items: center;
@@ -11,9 +12,12 @@
     width: 100vw;
     height: 50px;
 
+    background-color: var(--color-white);
+
     box-shadow: 1px 0 5px 1px var(--color-shadow);
     z-index: 999;
 }
+
 .navbar-content {
     display: flex;
     justify-content: space-between;
@@ -33,12 +37,14 @@
     font-weight: bold;
     font-size: 1.2rem;
 }
+
 /* HamburgerMenu -------------------------------------------------- */
 #mobile-toggle {
     position: relative;
 
     margin-left: auto;
 }
+
 #mobile-toggle,
 #mobile-toggle::before,
 #mobile-toggle::after {
@@ -53,20 +59,35 @@
     transition: 500ms ease;
 
 }
-#mobile-toggle::before { position: absolute; top: 5px; right: 0;}
-#mobile-toggle::after { position: absolute; bottom: 5px; right: 0;}
 
-#mobile-toggle.menu-open { transform: rotate(360deg); width: 0; }
+#mobile-toggle::before {
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+#mobile-toggle::after {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+
+#mobile-toggle.menu-open {
+    transform: rotate(360deg);
+    width: 0;
+}
 
 #mobile-toggle.menu-open::before {
-    transform: rotate(-45deg) scale(1,1);
+    transform: rotate(-45deg) scale(1, 1);
     top: 0;
 }
+
 #mobile-toggle.menu-open::after {
     transform: rotate(45deg);
     bottom: 0;
 }
- /* -------------------------------------------------- */
+
+/* -------------------------------------------------- */
 
 #nav-btns {
     position: absolute;
@@ -87,12 +108,14 @@
 
     transform: translate(-100%);
     transition: 250ms ease;
-    
+
 }
-#mobile-toggle.menu-open + #nav-btns{
+
+#mobile-toggle.menu-open+#nav-btns {
     transform: translate(0%);
-    background-color: rgba(255,255,255,.8);
+    background-color: rgba(255, 255, 255, .8);
 }
+
 .nav-btn {
     font-size: 1.5rem;
     color: var(--color-blue);
