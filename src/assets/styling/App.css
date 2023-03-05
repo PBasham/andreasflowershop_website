@@ -34,7 +34,9 @@ video {
 /* font-family: 'Nunito', sans-serif; */
 
 
-.App {}
+.App {
+    position: relative;
+}
 
 h1 {
     font-size: max(1.5rem, 1rem + 0.390625vw);

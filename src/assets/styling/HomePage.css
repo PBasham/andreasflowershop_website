@@ -1,5 +1,8 @@
 /* general home page styling -------------------------------------------------- */
-#home-page-div {}
+#home-page-div {
+    position: relative;
+    padding-top: 50px;
+}
 /* Hero Image -------------------------------------------------- */
 #hero-image-wrapper {
     display: flex;

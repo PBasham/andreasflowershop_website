@@ -3,7 +3,7 @@
 -----------------------------------------*/
 #navbar {
     position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
 
     display: flex;
@@ -79,6 +79,7 @@
     position: absolute;
     top: 0;
     right: 0;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,19 +87,18 @@
 
     margin-top: 50px;
     padding-top: 5em;
-    height: calc(100vh - 50px);
     width: 90%;
-
+    
     color: white;
-
+    
+    height: calc(100vh - 50px);
     transform: translate(100%);
-    transition: 250ms ease;
-
+    transition: ease 250ms;
+    
 }
 
 #mobile-toggle.menu-open+#nav-btns {
     transform: translate(0%);
-    background-color: rgba(255, 255, 255, .8);
     background-color: var(--color-transblue);
 }
 

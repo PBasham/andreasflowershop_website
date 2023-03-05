@@ -1,5 +1,6 @@
 // depencencies --------------------------------------------------
 import React, { FC } from 'react'
+import { Divider } from "../../components/divider"
 // components --------------------------------------------------
 import { About, Gallary, HeroImage, Services } from "./components"
 
@@ -14,6 +15,7 @@ const Home: FC<HomeProps> = (props: HomeProps) => {
         <div id="home-page-div">
             <HeroImage />
             <About />
+            <Divider />
             <Services />
             <Gallary />
         </div>

@@ -1,0 +1,5 @@
+.divider-bar {
+    height: 10px;
+    width: 100vw;
+    color: var(--color-accent);
+}
