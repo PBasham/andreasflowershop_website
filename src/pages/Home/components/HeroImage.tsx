@@ -2,7 +2,6 @@ import React, { FC, useState } from 'react'
 // components --------------------------------------------------
 import { ButtonOne } from "../../../components/ui/Buttons"
 //  misc --------------------------------------------------
-import { bubble } from 'react-icons-kit/icomoon/bubble'
 
 interface HeroImageProps {
 

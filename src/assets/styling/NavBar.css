@@ -14,7 +14,7 @@
     width: 100vw;
     height: 50px;
 
-    background-color: var(--color-white);
+    background-color: var(--color-transwhite);
 
     z-index: 999;
 }

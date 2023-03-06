@@ -11,7 +11,7 @@ const Footer: FC<FooterProps> = (props: FooterProps) => {
    const {} = props
 
    return (
-       <div>
+       <div id="footer">
            Footer
        </div>
    )

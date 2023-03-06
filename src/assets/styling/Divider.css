@@ -1,5 +1,32 @@
 .divider-bar {
-    height: 10px;
-    width: 100vw;
-    color: var(--color-accent);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    margin: 1em;
+}
+.div-bar-left,
+.div-bar-right,
+.div-bar-middle {
+    background-color: var(--color-accent);
+    height: 2px;
+}
+
+.div-bar-left {
+    grid-column: 1/2;
+}
+.div-bar-middle,
+.div-bar-text {
+    grid-column: 2/3;
+
+    text-align: center;
+}
+.div-bar-right {
+    grid-column: 3/4;
+}
+
+.bar-Icon {
+    margin-right: 8px;
 }
