@@ -38,17 +38,20 @@ video {
 .App {
     position: relative;
 }
-
+:is(h1, h2, h3) {
+    color: var(--color-blue);
+}
 h1 {
     font-size: max(1.5rem, 1rem + 0.390625vw);
     font-weight: bold;
-    color: var(--color-blue);
 }
 
 h2 {
-    color: var(--color-blue);
     font-size: calc(1.1rem + 0.390625vw);
     font-weight: bold;
+}
+h3 {
+    font-size: calc(1.1rem + 0.390625vw);
 }
 p {
     color: var(--color-accent);

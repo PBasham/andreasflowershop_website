@@ -1,0 +1,79 @@
+#footer {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: var(--color-pink);
+}
+
+#footer h3 {
+    position: relative;
+}
+
+.footer-header-icon {
+    height: 24px;
+    aspect-ratio: 1;
+
+    margin-left: .25em;
+
+    transform: translatey(-2px);
+}
+
+.footer-list {
+    margin: 1em;
+}
+
+.footer-list li {
+    list-style: none;
+    color: var(--color-accent);
+}
+
+.footer-list:not(#footer-list-socials) li:not(:nth-of-type(1)) {
+    margin-top: .5em;
+}
+
+.footer-icon {
+    position: relative;
+    top: 0;
+    color: var(--color-accent);
+    font-size: 36px;
+
+    transition: 300ms ease;
+}
+
+.footer-icon::before {
+    content: "asd";
+    position: absolute;
+    bottom: -5px;
+
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-blue);
+}
+
+.footer-icon:is(:hover, :focus) {
+    color: var(--color-blue);
+}
+
+#footer-list-socials li {
+    display: inline;
+}
+
+#footer-list-socials {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+}
+
+#footer-icon-instagram {}
+
+#footer-li-instagram {}
+
+#footer-icon-yelp {}
+
+#footer-icon-google {}
+
+#footer-icon-doordash {}
+
+#footer-list-contact {}
+
+#footer-list-avail {}

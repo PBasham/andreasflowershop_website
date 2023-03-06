@@ -1,21 +1,13 @@
 :root {
-    --color-blue: #004E8D;
+    --color-blue: rgb(0, 78, 141);
+    --color-transblue: rgba(0, 78, 141,.9);
     --color-accent: #595959;
     --color-white: #fff;
     --color-transwhite: rgba(255, 255, 255,.8);
     --color-pink: #F7C6D9;
-    --color-black: #000;
-
-
-
-    --color-transblue: rgba(0, 78, 141,.9);
-    --color-shadow: rgba(0,0,0,.4);
-
-
-
     
-
-
+    --color-black: #000;
+    --color-shadow: rgba(0,0,0,.4);
 
     --color-test: rgb(99, 252, 99);
 }
