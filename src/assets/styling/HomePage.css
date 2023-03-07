@@ -40,7 +40,9 @@
 }
 /* Services Section -------------------------------------------------- */
 #services-section {
-
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 .service-card {
     margin-inline: auto;
@@ -51,5 +53,12 @@
 
     text-align: center;
 }
+.service-card:hover,
+.service-card:hover :is(h3, p) {
+    color: var(--color-white);
+    background-color: var(--color-blue);
+}
 .service-card-header {}
 .service-card-text {}
+/* Gallery Section -------------------------------------------------- */
+#services-section {}

@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import { ServiceCard } from "../../../components/ServiceCard"
 
 interface ServicesProps {
 
@@ -10,10 +11,14 @@ export const Services: FC<ServicesProps> = (props: ServicesProps) => {
     return (
         <div id="services-section">
 
-            <div className="service-card">
-                <h3 className="service-card-header">Chair/Table Rental</h3>
-                <p className="service-card-text" >We offer xx chairs and xx tables. We something something, and something the something.</p>
-            </div>
+            <ServiceCard 
+                header="Chair/Table Rental"
+                text="We offer xx chairs and xx tables. We something something, and something the something."
+            />
+            <ServiceCard 
+                header="Delivery"
+                text="Order for same day or sometime in the future and we will make sure to deliver on time!"
+            />
 
         </div>
     )
