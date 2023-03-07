@@ -28,7 +28,7 @@
 
 #hero-image-div h1 {
 }
-/* About Secton -------------------------------------------------- */
+/* About Section -------------------------------------------------- */
 #about-div {
     padding: 2em 1em;
     
@@ -38,3 +38,18 @@
 #about-div h2 {
     margin-bottom: 1em;
 }
+/* Services Section -------------------------------------------------- */
+#services-section {
+
+}
+.service-card {
+    margin-inline: auto;
+    padding: 1em;
+    width: 90vw;
+    border: 2px solid var(--color-blue);
+    border-radius: 15px;
+
+    text-align: center;
+}
+.service-card-header {}
+.service-card-text {}

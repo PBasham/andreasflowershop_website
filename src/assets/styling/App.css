@@ -47,12 +47,10 @@ h1 {
 }
 
 h2 {
-    font-size: calc(1.1rem + 0.390625vw);
+    font-size: clamp(18px,18px + .5vw, 18px);
     font-weight: bold;
 }
-h3 {
-    font-size: calc(1.1rem + 0.390625vw);
-}
+h3 {}
 p {
     color: var(--color-accent);
 }
