@@ -3,11 +3,12 @@
     position: relative;
     padding-top: 50px;
 }
+
 /* Hero Image -------------------------------------------------- */
 #hero-image-wrapper {
     display: flex;
     align-items: center;
-    
+
     min-height: 250px;
     background-image: url(../imgs/FlowerBackground.jpg);
     background-repeat: no-repeat;
@@ -26,24 +27,26 @@
     min-height: 250px;
 }
 
-#hero-image-div h1 {
-}
+#hero-image-div h1 {}
+
 /* About Section -------------------------------------------------- */
 #about-div {
     padding: 2em 1em;
-    
+
     text-align: center;
 }
 
 #about-div h2 {
     margin-bottom: 1em;
 }
+
 /* Services Section -------------------------------------------------- */
 #services-section {
     display: flex;
     flex-direction: column;
     gap: 2em;
 }
+
 .service-card {
     margin-inline: auto;
     padding: 1em;
@@ -53,12 +56,30 @@
 
     text-align: center;
 }
+
 .service-card:hover,
 .service-card:hover :is(h3, p) {
     color: var(--color-white);
     background-color: var(--color-blue);
 }
+
 .service-card-header {}
-.service-card-text {}
+
+.service-card-text {
+    color: var(--color-accent);
+}
+
 /* Gallery Section -------------------------------------------------- */
-#services-section {}
+#Gallery-section {}
+
+
+#filter-btns-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .75em;
+
+    margin: 1em;
+}
+
+.filter-btn {
+}
