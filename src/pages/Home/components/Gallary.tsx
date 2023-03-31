@@ -1,10 +1,11 @@
 import React, { FC, useState, ChangeEvent, ChangeEventHandler, useEffect } from 'react'
-// carousel --------------------------------------------------
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+// interfaces --------------------------------------------------
+import { GalleryImage } from "../../../interfaces";
 // components --------------------------------------------------
 import { ButtonOne } from "../../../components/ui/Buttons"
 import { allGalleryImages } from "../../../assets/imgs";
+import { GalleryMobileView } from "../../../components/GalleryView/GalleryMobileView";
+import { GalleryDesktopView } from "../../../components/GalleryView/GalleryDesktopView";
 
 interface GallaryProps {
 
@@ -25,12 +26,6 @@ export const Gallary: FC<GallaryProps> = (props: GallaryProps) => {
     ]
 
     const [selectedCategory, setSelectedCategory] = useState<string>("All")
-
-    interface GalleryImage {
-        label: string;
-        src: string;
-        categories: string[];
-    }
 
     const [selectedGalleryImages, setSelectedGalleryImages] = useState<GalleryImage[]>([])
 
@@ -60,46 +55,9 @@ export const Gallary: FC<GallaryProps> = (props: GallaryProps) => {
 
     return (
         <div id="gallery-section">
-            <div id="filter-input-div">
-                <h1>Flowers for any occasion</h1>
-                <select id="categorySelector" onChange={handleCategoryChange} name="category" value={selectedCategory} >
-                    {categories.map((category) => (
-                        <option
-                            key={category}
-                            value={`${category}`}
-
-                        >{category}</option>
-                    ))}
-                </select>
-            </div>
-            <div id="filter-btns-div">
-                {categories.map((category) => (
-                    <ButtonOne
-                        key={category}
-                        text={category}
-                        classes={"filter-btn"}
-                        onClick={() => setSelectedCategory(category)}
-                    />
-                ))}
-            </div>
-            <div id="gallery-content">
-                <Carousel
-                    infiniteLoop
-                    autoFocus
-                    autoPlay
-                    showThumbs={false}
-                    showStatus={false}
-                    interval={4000}
-                    centerMode
-                >
-                    {selectedGalleryImages.map((image) => (
-                    <div className="gallery-card">
-                        <img src={`./src/assets/imgs/${image.src}`} alt="Flowers from our collection" />
-                        {image.label ? <p>{image.label}</p> : null}
-                    </div>
-                    ))}
-                </Carousel>
-            </div>
+            <GalleryDesktopView selectedCategory={selectedCategory} categories={categories} handleCategoryChange={handleCategoryChange} updateSelectedCategory={(category) => setSelectedCategory(category)} />
+            <GalleryMobileView galleryImages={selectedGalleryImages}/>
+            
         </div>
     )
 }
