@@ -1,7 +1,9 @@
 :root {
     --color-blue: rgb(0, 78, 141);
     --color-transblue: rgba(0, 78, 141,.9);
+    --color-lightTransBlue: rgba(213, 236, 254, 0.571);
     --color-accent: #595959;
+    --color-transAccent: #59595938;
     --color-white: #fff;
     --color-transwhite: rgba(255, 255, 255,.8);
     --color-pink: #F7C6D9;
