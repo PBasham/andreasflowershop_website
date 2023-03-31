@@ -1,4 +1,4 @@
-import React, { FC, useState, ChangeEvent, ChangeEventHandler } from 'react'
+import React, { FC, useState, ChangeEvent, ChangeEventHandler, useEffect } from 'react'
 // carousel --------------------------------------------------
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -18,13 +18,33 @@ export const Gallary: FC<GallaryProps> = (props: GallaryProps) => {
         "Birthday",
         "Wedding",
         "Anniversary",
-        "Valentines Day",
+        "Valentine's Day",
         "Mother's Day",
-        "Sympath",
+        "Sympathy",
         "Funeral",
     ]
 
-    const [selectedCategory, setSelectedCategory] = useState("All")
+    const [selectedCategory, setSelectedCategory] = useState<string>("All")
+
+    interface GalleryImage {
+        label: string;
+        src: string;
+        categories: string[];
+    }
+
+    const [selectedGalleryImages, setSelectedGalleryImages] = useState<GalleryImage[]>([])
+
+    function getSelectedCategoryImages(selection: string) {
+        let selections: GalleryImage[] = allGalleryImages.filter((curImg) => curImg.categories.includes(selectedCategory.toLowerCase()))
+    
+        setSelectedGalleryImages(selections)
+
+    }
+    
+    useEffect(() => {
+        getSelectedCategoryImages(selectedCategory)
+    }, [selectedCategory])
+
 
     /** // TODO  
      * [] button for each category
@@ -35,6 +55,7 @@ export const Gallary: FC<GallaryProps> = (props: GallaryProps) => {
     const handleCategoryChange: React.ChangeEventHandler<HTMLSelectElement> = (e) => {
         let selection = e.target.value
         setSelectedCategory(selection)
+        getSelectedCategoryImages(selection)
     }
 
     return (
@@ -64,14 +85,18 @@ export const Gallary: FC<GallaryProps> = (props: GallaryProps) => {
             <div id="gallery-content">
                 <Carousel
                     infiniteLoop
+                    autoFocus
                     autoPlay
+                    showThumbs={false}
+                    showStatus={false}
                     interval={4000}
                     centerMode
                 >
-                    {allGalleryImages.map((image) => (
-                        <div className="gallery-card">
-                            <img src={`./src/assets/imgs/${image}`} alt="" />
-                        </div>
+                    {selectedGalleryImages.map((image) => (
+                    <div className="gallery-card">
+                        <img src={`./src/assets/imgs/${image.src}`} alt="Flowers from our collection" />
+                        {image.label ? <p>{image.label}</p> : null}
+                    </div>
                     ))}
                 </Carousel>
             </div>

@@ -12,16 +12,64 @@ export { default as image12 } from "./image 12.jpg"
 export { default as image13 } from "./image 13.jpg"
 
 export const allGalleryImages = [
-    "./image 2.jpg",
-    "./image 3.jpg",
-    "./image 4.jpg",
-    "./image 5.jpg",
-    "./image 6.jpg",
-    "./image 7.jpg",
-    "./image 8.jpg",
-    "./image 9.jpg",
-    "./image 10.jpg",
-    "./image 11.jpg",
-    "./image 12.jpg",
-    "./image 13.jpg",
+    {
+        label: "",
+        src: "image 2.jpg",
+        categories: ["all", "birthday"],
+    },
+    {
+        label: "",
+        src: "image 3.jpg",
+        categories: ["all", "wedding"],
+    },
+    {
+        label: "",
+        src: "image 4.jpg",
+        categories: ["all", "anniversary"],
+    },
+    {
+        label: "",
+        src: "image 5.jpg",
+        categories: ["all", "valentine's day"],
+    },
+    {
+        label: "",
+        src: "image 6.jpg",
+        categories: ["all", "mother's day"],
+    },
+    {
+        label: "",
+        src: "image 7.jpg",
+        categories: ["all", "sympathy"],
+    },
+    {
+        label: "",
+        src: "image 8.jpg",
+        categories: ["all", "funeral"],
+    },
+    {
+        label: "",
+        src: "image 9.jpg",
+        categories: ["all", "birthday"],
+    },
+    {
+        label: "",
+        src: "image 10.jpg",
+        categories: ["all", "wedding"],
+    },
+    {
+        label: "",
+        src: "image 11.jpg",
+        categories: ["all", "anniversary"],
+    },
+    {
+        label: "",
+        src: "image 12.jpg",
+        categories: ["all", "wedding"],
+    },
+    {
+        label: "",
+        src: "image 13.jpg",
+        categories: ["all", "anniversary"],
+    },
 ]

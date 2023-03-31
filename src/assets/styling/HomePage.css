@@ -112,11 +112,17 @@
 
 #gallery-content {
     margin-top: 1em;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
+    padding-top: 2em;
+    padding-bottom: 2em;
     background-color: var(--color-transAccent);
     border-top: 2px solid var(--color-transAccent);
     border-bottom: 2px solid var(--color-transAccent);
 }
 .gallery-card {
-    margin: 1em 1em;
+    margin-inline: 1em;
+}
+.gallery-card img {
+    border-radius: 5px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.243);
 }
