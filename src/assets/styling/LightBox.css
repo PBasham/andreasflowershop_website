@@ -10,7 +10,8 @@
     height: 100vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, .3);
-
+ 
+    overflow: auto;
     z-index: 999;
 }
 
@@ -25,13 +26,13 @@
     background-color: #fff;
     border-radius: 5px;
 
+    
     box-shadow: 0 0 2px 4px rgba(0, 0, 0, .2);
 }
 
 .lightBox-inner form {
     display: flex;
     flex-direction: column;
-
 }
 
 .lightBox-inner h1 {
@@ -82,7 +83,7 @@
 
 .lightBox-submit-btn {
     align-self: center;
-    
+
     margin-top: 1em;
     width: 200px;
 
