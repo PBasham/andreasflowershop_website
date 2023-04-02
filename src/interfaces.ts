@@ -3,3 +3,9 @@ export interface GalleryImage {
     src: string;
     categories: string[];
 }
+
+export interface GetQuoteForm {
+    name: string | null
+    email: string | null
+    message: string | null
+}

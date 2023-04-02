@@ -9,7 +9,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 
 interface GalleryMobileViewProps {
-    galleryImages: object[]
+    galleryImages: GalleryImage[]
 }
 
 export const GalleryMobileView: FC<GalleryMobileViewProps> = (props: GalleryMobileViewProps) => {
@@ -24,8 +24,8 @@ export const GalleryMobileView: FC<GalleryMobileViewProps> = (props: GalleryMobi
         interval={4000}
         centerMode
     >
-        {galleryImages.map((image) => (
-        <div className="gallery-card">
+        {galleryImages.map((image, idx) => (
+        <div key={idx + image.src} className="gallery-card">
             <img src={`./src/assets/imgs/${image.src}`} alt="Flowers from our collection" />
             {image.label ? <p>{image.label}</p> : null}
         </div>

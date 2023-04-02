@@ -4,20 +4,11 @@ import { ButtonOne } from "../../../components/ui/Buttons"
 //  misc --------------------------------------------------
 
 interface HeroImageProps {
-
+    handleGetQuote: () => void
 }
 
 export const HeroImage: FC<HeroImageProps> = (props: HeroImageProps) => {
-    const { } = props
-
-    const [openEmailForm, setOpenEmailForm] = useState(false)
-
-    function handleOpenEmailForm() {
-        setOpenEmailForm(true)
-    }
-    function handleCloseEmailForm() {
-        setOpenEmailForm(false)
-    }
+    const { handleGetQuote } = props
 
     return (
         <div id="hero-image-wrapper">
@@ -30,7 +21,7 @@ export const HeroImage: FC<HeroImageProps> = (props: HeroImageProps) => {
                     classes="sendEmail-btn"
                     iconSize={16}
                     iconStyling={{ transform: "translatey(-2px)", }}
-                    onClick={() => console.log("I've been clicked!")}
+                    onClick={handleGetQuote}
                 />
             </div>
         </div>
