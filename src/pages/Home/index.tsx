@@ -29,6 +29,7 @@ const Home: FC<HomeProps> = (props: HomeProps) => {
                 barStyling={{ transform: "translatey(-2px)", }}
             />
             <Gallary />
+            <Divider barHeader="" barStyling={{ transform: "translatey(-2px)", }} />
         </div>
     )
 }
